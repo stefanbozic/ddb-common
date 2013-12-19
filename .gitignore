@@ -12,3 +12,4 @@ Guardfile
 .idea
 ddb-next.iml
 bin
+web-app/selenium

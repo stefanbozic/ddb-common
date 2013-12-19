@@ -1,0 +1,55 @@
+<plugin name='ddb-common' version='0.1' grailsVersion='2.2 &gt; *'>
+  <author>FIZ Karlsruhe</author>
+  <title>Ddb Common Plugin</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/ddb-common</documentation>
+  <type>DdbCommonGrailsPlugin</type>
+  <resources>
+    <resource>de.ddb.common.beans.Bookmark</resource>
+    <resource>de.ddb.common.beans.Folder</resource>
+    <resource>de.ddb.common.beans.Item</resource>
+    <resource>de.ddb.common.beans.SavedSearch</resource>
+    <resource>de.ddb.common.beans.SearchQueryTerm</resource>
+    <resource>de.ddb.common.beans.User</resource>
+    <resource>de.ddb.common.ConfigurationService</resource>
+    <resource>de.ddb.common.EchoService</resource>
+    <resource>de.ddb.common.ApiConsumer</resource>
+    <resource>de.ddb.common.ApiResponse</resource>
+    <resource>de.ddb.common.JsonUtil</resource>
+    <resource>de.ddb.common.ProxyUtil</resource>
+    <resource>de.ddb.common.constants.CortexConstants</resource>
+    <resource>de.ddb.common.constants.CortexNamespace</resource>
+    <resource>de.ddb.common.constants.FacetEnum</resource>
+    <resource>de.ddb.common.constants.FolderConstants</resource>
+    <resource>de.ddb.common.constants.SearchParamEnum</resource>
+    <resource>de.ddb.common.constants.SupportedLocales</resource>
+    <resource>de.ddb.common.constants.SupportedOpenIdProviders</resource>
+    <resource>de.ddb.common.constants.Type</resource>
+    <resource>de.ddb.common.exception.AuthorizationException</resource>
+    <resource>de.ddb.common.exception.BackendErrorException</resource>
+    <resource>de.ddb.common.exception.BadRequestException</resource>
+    <resource>de.ddb.common.exception.ConfigurationException</resource>
+    <resource>de.ddb.common.exception.ConflictException</resource>
+    <resource>de.ddb.common.exception.EntityNotFoundException</resource>
+    <resource>de.ddb.common.exception.FavoritelistNotFoundException</resource>
+    <resource>de.ddb.common.exception.InvalidUrlException</resource>
+    <resource>de.ddb.common.exception.ItemNotFoundException</resource>
+    <resource>de.ddb.common.exception.UserNotFoundException</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='http://repo.opengeo.org/' url='http://repo.opengeo.org/' />
+    <repository name='http://download.osgeo.org/webdav/geotools/' url='http://download.osgeo.org/webdav/geotools/' />
+  </repositories>
+  <dependencies>
+    <runtime>
+      <dependency group='org.openid4java' name='openid4java' version='0.9.8' />
+      <dependency group='org.codehaus.groovy.modules.http-builder' name='http-builder' version='0.5.2' />
+    </runtime>
+  </dependencies>
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
