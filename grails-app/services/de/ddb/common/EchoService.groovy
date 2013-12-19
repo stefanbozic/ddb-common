@@ -14,8 +14,9 @@ class EchoService {
     def findAll() {
         def totalInstitution = 0
         def allInstitutions = [data: [:], total: totalInstitution]
-        //def apiResponse = ApiConsumer.getJson(configurationService.getBackendUrl(), '/institutions')
-        def apiResponse = ApiConsumer.getJson("http://metadaten-backend.deutsche-digitale-bibliothek.de:9998", '/institutions')
+        println "configurationService::::::::::::::::::::: " +configurationService
+        def apiResponse = ApiConsumer.getJson(configurationService.getBackendUrl(), '/institutions')
+        //def apiResponse = ApiConsumer.getJson("http://metadaten-backend.deutsche-digitale-bibliothek.de:9998", '/institutions')
         if (apiResponse.isOk()) {
             def institutionList = apiResponse.getResponse()
 

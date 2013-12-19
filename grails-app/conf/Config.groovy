@@ -23,27 +23,27 @@ log4j = {
     warn   'org.mortbay.log'
 }
 
-//environments {
-//    development {
-//        grails.logging.jul.usebridge = true
-//        grails.config.locations = [
-//            "file:${userHome}/.grails/ddb-next.properties"
-//        ]
-//    }
-//    production {
-//        grails.logging.jul.usebridge = false
-//        grails.config.locations = [
-//            "file:"+ System.getProperty('catalina.base')+ "/grails/app-config/ddb-next.properties"
-//        ]
-//    }
-//    test {
-//        grails.logging.jul.usebridge = true
-//        grails.config.locations = [
-//            "file:${userHome}/.grails/ddb-next.properties"
-//        ]
-//    }
-//    println "| Read properties from " + grails.config.locations[0]
-//}
+environments {
+    development {
+        grails.logging.jul.usebridge = true
+        grails.config.locations = [
+            "file:${userHome}/.grails/ddb-next.properties"
+        ]
+    }
+    production {
+        grails.logging.jul.usebridge = false
+        grails.config.locations = [
+            "file:"+ System.getProperty('catalina.base')+ "/grails/app-config/ddb-next.properties"
+        ]
+    }
+    test {
+        grails.logging.jul.usebridge = true
+        grails.config.locations = [
+            "file:${userHome}/.grails/ddb-next.properties"
+        ]
+    }
+    println "| Read properties from " + grails.config.locations[0]
+}
 
 //DDB SPECIFIC Configuration variables
 //The variables have to be overwritten by defining local configurations, see below environments
