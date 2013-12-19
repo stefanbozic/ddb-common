@@ -15,4 +15,11 @@ class EchoServiceTests extends GroovyTestCase {
 
         assert echo == "Hallo Echo"
     }
+
+
+    @Test void findAllTest() {
+        def allInstitutions = service.findAll()
+
+        assert allInstitutions.total > 0
+    }
 }
