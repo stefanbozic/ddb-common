@@ -48,13 +48,13 @@ grails.project.dependency.resolution = {
 
     dependencies {
         runtime 'org.openid4java:openid4java:0.9.8'
-        runtime ('org.codehaus.groovy.modules.http-builder:http-builder:0.5.2') { excludes "groovy" }
+        runtime ('org.codehaus.groovy.modules.http-builder:http-builder:0.6') { excludes "groovy" }
     }
 
     plugins {
         build(":tomcat:$grailsVersion",
                 ":release:2.2.1",
-                ":rest:0.7",
+                ":rest:0.8",
                 ":rest-client-builder:1.0.3") { export = false }
     }
 }
