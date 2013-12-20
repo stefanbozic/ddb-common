@@ -18,6 +18,9 @@ package de.ddb.common
 import org.apache.commons.logging.LogFactory
 import org.codehaus.groovy.grails.web.util.WebUtils
 
+import de.ddb.common.constants.FacetEnum
+import de.ddb.common.constants.SearchParamEnum
+
 
 class ApiInstitution {
 

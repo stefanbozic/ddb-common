@@ -16,6 +16,7 @@
 package de.ddb.common.beans
 
 import groovy.transform.ToString
+import de.ddb.common.JsonUtil
 import de.ddb.common.constants.Type
 
 @ToString(includeNames=true)
