@@ -1,3 +1,5 @@
+import de.ddb.common.constants.FacetEnum
+
 /*
  * Copyright (C) 2013 FIZ Karlsruhe
  *
@@ -36,6 +38,24 @@ log4j = {
             'net.sf.ehcache.hibernate'
 
     warn   'org.mortbay.log'
+}
+
+ddb {
+    backend {
+        facets {
+            filter = [
+                [facetName:FacetEnum.LANGUAGE.getName(), filter:'term:unknown' ],
+                [facetName:FacetEnum.LANGUAGE.getName(), filter:'term:termunknown'],
+                [facetName:FacetEnum.KEYWORDS.getName(), filter:'null'],
+                [facetName:FacetEnum.PROVIDER.getName(), filter:'null'],
+                [facetName:FacetEnum.AFFILIATE.getName(), filter:'null'],
+                [facetName:FacetEnum.TYPE.getName(), filter:'null'],
+                [facetName:FacetEnum.SECTOR.getName(), filter:'null'],
+                [facetName:FacetEnum.PLACE.getName(), filter:'null'],
+                [facetName:FacetEnum.TIME.getName(), filter:'null']
+            ]
+        }
+    }
 }
 
 environments {
