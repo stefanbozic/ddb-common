@@ -20,8 +20,6 @@ grails.project.test.reports.dir = "target/test-reports"
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
     inherits("global") {
-        // uncomment to disable ehcache
-        // excludes 'ehcache'
     }
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     legacyResolve false // whether to do a secondary resolve on plugin installation, not advised and here for backwards compatibility
@@ -34,12 +32,6 @@ grails.project.dependency.resolution = {
 
         mavenLocal()
         mavenCentral()
-
-        // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
-        // mavenRepo "http://snapshots.repository.codehaus.org"
-        // mavenRepo "http://repository.codehaus.org"
-        // mavenRepo "http://download.java.net/maven/2/"
-        // mavenRepo "http://repository.jboss.com/maven2/"
 
         // This are the geotools repositories required for coordinate transformation
         mavenRepo "http://repo.opengeo.org/"
